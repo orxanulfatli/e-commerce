@@ -1,0 +1,25 @@
+ul li{list-style: none;}
+.topbar {
+    padding: 20px;
+    
+}
+.topbar-list {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topbar-list li {
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px solid gray;
+}
+
+.topbar-list a:hover {
+  color:tomato;
+  cursor: pointer;
+}
+.topbar-list a {display: flex;}
+.topbar-list span {
+    padding-top: 3px;
+}

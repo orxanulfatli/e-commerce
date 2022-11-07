@@ -1,0 +1,29 @@
+.filterBox {
+  width: 12vmax;
+  position: absolute;
+  top: 20vmax;
+  left: 4vmax;
+}
+.filterBox > fieldset {
+    margin-bottom: 20px;
+}
+.filterBox fieldset {padding: 20px;}
+
+.MuiSlider-root{  color:tomato !important;
+    width: 100px !important;
+    height: 8px !important;}
+.MuiSlider-thumb{  
+    height: 24px !important;
+    width: 24px !important;
+    background-color: #fff !important;
+    border: 2px solid currentColor !important;
+    margin-top: -8px !important;
+    margin-left: -12px !important;}
+.MuiSlider-valueLabel{
+     left: calc(-50% + 4px) !important;
+}
+.MuiSlider-rail{    height: 8px !important;
+    border-radius: 4px !important;}
+.MuiSlider-track{   
+    height: 8px !important;
+    border-radius: 4px !important;}

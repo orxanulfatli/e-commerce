@@ -1,0 +1,60 @@
+.speedDial {
+  position: fixed;
+  right: 2vmax;
+  top: 1vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.header {
+  background-color: white;
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px;
+  z-index: 15;
+}
+
+.header-logo{
+  width: 180px;
+  height: 50px;
+  
+}
+.header-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-search{
+  display: flex;
+  width: 50%;
+  height: 30px;
+  border: 2px solid tomato;
+}
+
+.header-search input {
+
+ width: 100%;
+ height: 100%;
+}
+
+.header-search input :focus {
+  border: none !important;
+}
+.header-nav  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.header-nav div{
+  margin-right: 5px;
+}
+.MuiSvgIcon-root {
+  font-size: 24px;
+}
