@@ -7,9 +7,11 @@ import AccountBoxOutlinedIcon from "@material-ui/icons/AccountBoxOutlined";
 import Badge from "@material-ui/core/Badge";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import Loader from "../../Loader/Loader";
-import SearchBar from "../Searchbar/SearchBar";
 import UserOptions from "./UserOptions";
 import Topbar from "./Topbar";
+import SearchBar from "./SearchBar";
+import PermIdentityIcon from "@material-ui/icons/PermIdentity";
+
 
 const Header = () => {
   const { isAuthenticated, user, loading } = useSelector((state) => state.user);
@@ -39,7 +41,7 @@ const Header = () => {
 
   return (
     <>
-      <Topbar/>
+      <Topbar />
       <div className="header">
         <div className="header-logo">
           <Link to="/">
@@ -48,16 +50,25 @@ const Header = () => {
         </div>
         <SearchBar />
         <nav className="header-nav">
-          
-          <div>
-            <Link to={"cart"}>
-              <Badge badgeContent={cartItems.length} color="error">
-                <AddShoppingCartIcon
-                  style={{ fontSize: "50px", color: "black", fontSize: "40px" }}
+          <ul>
+            <li>
+              <Link to={"cart"}>
+                <Badge badgeContent={cartItems.length} color="error">
+                  <AddShoppingCartIcon
+                    style={{ color: "black", fontSize: "40px" }}
+                  />
+                </Badge>
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/login">
+                <PermIdentityIcon
+                  style={{ color: "black", fontSize: "40px" }}
                 />
-              </Badge>
-            </Link>
-          </div>
+              </Link>
+            </li>
+          </ul>
         </nav>
       </div>
     </>

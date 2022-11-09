@@ -9,19 +9,19 @@
   height: 56px;
   border-radius: 100%;
 }
+ul li{list-style: none;margin: 0;padding: 0;margin-block-start: 0;}
+
 
 .header {
   background-color: white;
   display:flex;
   width: 100%;
-  justify-content: space-around;
-  padding: 20px;
-  z-index: 15;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo{
   width: 180px;
-  height: 50px;
   
 }
 .header-logo img {
@@ -52,8 +52,10 @@
   justify-content: space-between;
   list-style: none;
 }
-.header-nav div{
-  margin-right: 5px;
+.header-nav ul{
+  display: flex;
+  /* margin-right: 5px; */
+  justify-content: space-around;
 }
 .MuiSvgIcon-root {
   font-size: 24px;

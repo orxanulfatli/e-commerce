@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Topbar.css'
-import PermIdentityIcon from "@material-ui/icons/PermIdentity";const Topbar = () => {
+
+const Topbar = () => {
   return (
     <div className="topbar">
       <ul className="topbar-list">
@@ -11,12 +12,7 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";const Topbar = ()
         <li>
           <Link to='contact'>Contact Us</Link>
         </li>
-        <li>
-          <Link to='/login'>
-            <PermIdentityIcon />
-            <span>Sign in</span>
-          </Link>
-        </li>
+     
       </ul>
     </div>
   );

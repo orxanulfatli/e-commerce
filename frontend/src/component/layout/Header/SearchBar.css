@@ -39,6 +39,14 @@
   background-color: rgb(55, 97, 214);
 }
 
+@media screen and (max-width:960px) {
+.searchBox {
+  width: 100%;
+  position: absolute;
+  top: 20vh;
+  z-index: 20;
+  max-width: 100vh;
+} }
 @media screen and (max-width: 600px) {
   .searchBox > input[type="text"] {
     width: 100%;

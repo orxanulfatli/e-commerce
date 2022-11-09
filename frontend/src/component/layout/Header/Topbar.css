@@ -9,7 +9,7 @@ ul li{list-style: none;}
   align-items: center;
 }
 
-.topbar-list li {
+.topbar-list li:first-child {
   padding-right: 5px;
   margin-right: 5px;
   border-right: 1px solid gray;

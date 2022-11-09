@@ -41,7 +41,7 @@ const Categorybar = () => {
           <li
             name="category"
             className="category-link"
-            key={category}
+            key={category.name}
             onClick={() => {
               categoryHandler(category.name);
             }}
