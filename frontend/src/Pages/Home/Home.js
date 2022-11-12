@@ -44,7 +44,7 @@ const Home = () => {
           <h2 className="homeHeading">Featured Products</h2>
 
             <div style= {{display:'flex',justifyContent:'space-around'}}>
-              <Filterbar/>
+              <Categorybar/>
             <div className="container" id="container">
               {products &&
                 products.map((product) => (
