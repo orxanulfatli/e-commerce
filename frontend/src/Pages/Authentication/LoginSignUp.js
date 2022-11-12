@@ -114,6 +114,9 @@ const LoginSignUp = ({ history, location }) => {
                 </div>
                 <button ref={switcherTab}></button>
               </div>
+              <div style={{ padding: "5px" }}>Guest email:funreal41@gmail.com</div>
+              <div style={{ padding: "5px" }}>Guest password:12345678</div>
+
               <form className="loginForm" ref={loginTab} onSubmit={loginSubmit}>
                 <div className="loginEmail">
                   <MailOutlineIcon />
