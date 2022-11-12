@@ -27,3 +27,15 @@
 .MuiSlider-track{   
     height: 8px !important;
     border-radius: 4px !important;}
+
+     @media screen and (max-width: 660px) {
+     .filterBox {border: none;display: flex;align-items: center;justify-content: space-between;  margin-top: 20% !important;}
+
+   .filterBox fieldset {
+    margin-right: 50px !important;
+    border: none !important;
+    padding: 0 !important;
+   }
+
+
+    }

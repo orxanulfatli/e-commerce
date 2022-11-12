@@ -40,3 +40,17 @@ height: 200px;
       border: 1px solid rgb(223, 213, 213);
 
  } */
+
+
+ @media screen and (max-width: 600px) {
+    .categoryBox {height: auto;}
+    .categoryBox h3{
+        display: none;
+
+    }
+
+    .categoryBox ul {
+        display: flex;
+    }
+
+ }

@@ -79,7 +79,7 @@ const initState = {
       </fieldset>
 
       <fieldset>
-        <Typography component="legend">Ratings Above</Typography>
+        <Typography component="legend">Ratings</Typography>
         <Slider
           name="ratings"
           value={values.ratings}

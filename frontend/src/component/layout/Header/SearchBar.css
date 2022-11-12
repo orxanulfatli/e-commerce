@@ -38,25 +38,43 @@
 .searchBox > input[type="submit"]:hover {
   background-color: rgb(55, 97, 214);
 }
-
 @media screen and (max-width:960px) {
 .searchBox {
-  width: 100%;
+  width: 90%;
   position: absolute;
-  top: 20vh;
+  top: 13%;
   z-index: 20;
   max-width: 100vh;
-} }
+  margin: 10px;
+} 
+ .searchBox > input[type="submit"] {
+  display: none;
+  }
+
+}
+@media screen and (max-width:660px) {
+.searchBox {
+  width: 70vh;
+  position: absolute;
+  top: 17vh;
+  z-index: 20;
+  max-width: 100vh;
+  margin: 5px;
+} 
+ 
+}
 @media screen and (max-width: 600px) {
+  .searchBox {
+  width: 44vh;
+
+} 
   .searchBox > input[type="text"] {
-    width: 100%;
+    width: 70vh;
     font: 300 4vw cursive;
     height: 10%;
   }
 
   .searchBox > input[type="submit"] {
-    height: 10%;
-    width: 30%;
-    font: 300 4vw "Roboto";
+display: none;
   }
 }
