@@ -35,6 +35,7 @@ const Products = () => {
   const { search } = useLocation();
   let query = useSearchParams();
 
+
   const setCurrentPageNo = (e) => {
     setCurrentPage(e);
   };
