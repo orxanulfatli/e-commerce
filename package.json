@@ -8,9 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js",
+    "start": "npm install --force --prefix frontend && npm run build --prefix frontend  node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "build":"npm install --force --prefix frontend && npm run build --prefix frontend ",
+    "build":"npm install",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
