@@ -1,12 +1,10 @@
 import './Categorybar.css'
-import Typography from "@material-ui/core/Typography";
-import { Link, useHistory } from "react-router-dom";
-import { useHistorySearch } from "../../../../hooks/useHistorySearch";
 
 import ComputerIcon from "@material-ui/icons/Computer";
 import SmartphoneIcon from "@material-ui/icons/Smartphone";
 import LocalMallIcon from "@material-ui/icons/LocalMall";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
+import { useHistorySearch } from '../../../../hooks/useHistorySearch';
 
 const categoriesWithIcons = [
   {

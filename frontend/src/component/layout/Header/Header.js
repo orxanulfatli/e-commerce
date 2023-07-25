@@ -53,7 +53,11 @@ const Header = () => {
           <ul>
             <li>
               <Link to={"cart"}>
-                <Badge badgeContent={cartItems.length} color="error">
+                <Badge
+                  badgeContent={cartItems.length}
+                  overlap="rectangular"
+                  color="error"
+                >
                   <AddShoppingCartIcon
                     style={{ color: "black", fontSize: "40px" }}
                   />

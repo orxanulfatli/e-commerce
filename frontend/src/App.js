@@ -19,7 +19,6 @@ import ResetPassword from "./Pages/Authentication/ResetPassword";
 import Cart from "./Pages/Cart/Cart";
 import Shipping from "./Pages/Shipping/Shipping";
 import ConfirmOrder from "./Pages/ConfirmOrder/ConfirmOrder";
-import axios from "axios";
 import Payment from "./Pages/Payment/Payment";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
@@ -41,6 +40,7 @@ import NotFound from "./Pages/Not Found/NotFound";
 import Products from "./component/Product/Products";
 import MainLayout from "./component/layout/MainLayout/MainLayout";
 import AdminLayout from "./component/layout/AdminLayout/AdminLayout";
+import { $mainAPi } from "./service";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -48,7 +48,7 @@ function App() {
   const [stripeApiKey, setStripeApiKey] = useState("");
 
   async function getStripeApiKey() {
-    const { data } = await axios.get("/api/v1/stripeapikey");
+    const { data } = await $mainAPi.get(`/api/v1/stripeapikey`);
 
     setStripeApiKey(data.stripeApiKey);
   }

@@ -1,5 +1,4 @@
 import { useLocation, useRouteMatch } from "react-router-dom";
-import Categorybar from "./Categorybar/Categorybar";
 import Filterbar from "./Filterbar/FIlterbar";
 
 const Sidebar = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { CgMouse } from "react-icons/all";
+import { CgMouse } from "react-icons/cg";
 import "./Home.css";
 import ProductCard from "./ProductCard.js";
 import MetaData from "../../component/layout/MetaData";
@@ -7,7 +7,6 @@ import { clearErrors, getProduct } from "../../Global/actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../../component/Loader/Loader";
 import { useAlert } from "react-alert";
-import Filterbar from "../../component/layout/Sidebar/Filterbar/FIlterbar";
 import Categorybar from "../../component/layout/Sidebar/Categorybar/Categorybar";
 
 const Home = () => {
